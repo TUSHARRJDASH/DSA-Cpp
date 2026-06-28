@@ -1,15 +1,15 @@
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> pairsum(vector<int>& nums, int target) {
         vector<int> ans;
         int n=nums.size();
         int i=0,j=n-1;
         while(i<j){
-            int twoSum =nums[i]+nums[j];
-            if(twoSum>target){
+            int pairsum =nums[i]+nums[j];
+            if(pairsum>target){
                 j--;
             }
-            else if(twoSum<target){
+            else if(pairsum<target){
                 i++;
             }
             else{
